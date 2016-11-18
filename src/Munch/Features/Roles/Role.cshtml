@@ -1,0 +1,31 @@
+﻿
+
+@model Munch.Features.Roles.RolesViewModel
+@{
+    ViewBag.Title = "Role";
+}
+
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Role</h3>
+        <form method="post" novalidate>
+
+            <div asp-validation-summary="ModelOnly"> </div>
+            <div class="form-group">
+                <label asp-for="RoleName"></label>
+                <input asp-for="RoleName" class="form-control" />
+                <span asp-validation-for="RoleName"></span>
+            </div>
+                        
+            <div class="form-group">
+                <input type="submit" value="Role" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+
+</div>

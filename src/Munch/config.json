@@ -1,0 +1,5 @@
+﻿{
+  "AppSettings": {
+   "RolesUrl": "http://localhost:56929/api"
+  }
+}
